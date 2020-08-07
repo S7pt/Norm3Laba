@@ -2,31 +2,31 @@ package ua.lviv.it.zoo.model;
 
 public abstract class AbstractFish extends AbstractSwimmingCreature {
 
-	protected int finCount;
-	
-	protected int gillsCount;
-	
-	public AbstractFish(double aquariumVolumeInLitres, int lifespanInYears, Diet diet,
-			double creatureLengthInSantimeters, String kindScientificName, int finCount, int gillsCount) {
-		super(aquariumVolumeInLitres, lifespanInYears, diet, creatureLengthInSantimeters, kindScientificName);
-		this.finCount = finCount;
-		this.gillsCount = gillsCount;
-	}
+  protected int finCount;
 
-	public int getFinCount() {
-		return finCount;
-	}
+  protected int gillsCount;
 
-	public void setFinCount(int finCount) {
-		this.finCount = finCount;
-	}
+  public AbstractFish(double aquariumVolumeInLitres, int lifespanInYears, Diet diet, double creatureLengthInSantimeters,
+      String kindScientificName, int finCount, int gillsCount) {
+    super(aquariumVolumeInLitres, lifespanInYears, diet, creatureLengthInSantimeters, kindScientificName);
+    this.finCount = finCount;
+    this.gillsCount = gillsCount;
+  }
 
-	public int getGillsCount() {
-		return gillsCount;
-	}
+  public int getFinCount() {
+    return finCount;
+  }
 
-	public void setGillsCount(int gillsCount) {
-		this.gillsCount = gillsCount;
-	}
+  public void setFinCount(int finCount) {
+    this.finCount = finCount;
+  }
+
+  public int getGillsCount() {
+    return gillsCount;
+  }
+
+  public void setGillsCount(int gillsCount) {
+    this.gillsCount = gillsCount;
+  }
 
 }
