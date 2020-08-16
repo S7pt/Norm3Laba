@@ -7,6 +7,9 @@ import ua.lviv.it.zoo.model.*;
 
 public abstract class BaseZooManagerTest {
 
+  protected List<AbstractSwimmingCreature> creatures=new LinkedList<AbstractSwimmingCreature>();
+
+  public void createCreature() {
   protected List<AbstractSwimmingCreature> creatures;
 
   public void createCreature() {

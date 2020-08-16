@@ -4,6 +4,16 @@ public class Catfish extends AbstractFish {
 
   private double whiskerLengthInSantimeters;
 
+  @Override
+  public String getHeaders() {
+    return super.getHeaders() + ",whiskerLengthInSantimeters";
+  }
+
+  @Override
+  public String toCsv() {
+    return super.toCsv() + "," + "Whiskers length in santimeters" + whiskerLengthInSantimeters;
+  }
+
   public Catfish(double aquariumVolumeInLitres, int lifespanInYears, Diet diet, double creatureLengthInSantimeters,
       String kindScientificName, int finCount, int gillsCount, double whiskerLengthInSantimeters) {
     super(aquariumVolumeInLitres, lifespanInYears, diet, creatureLengthInSantimeters, kindScientificName, finCount,

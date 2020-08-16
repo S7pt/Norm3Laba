@@ -2,23 +2,31 @@ package ua.lviv.it.zoo.model;
 
 public abstract class AbstractFish extends AbstractSwimmingCreature {
 
-  protected int finCount;
+  protected int finsCount;
 
   protected int gillsCount;
+
+  @Override
+  public String getHeaders() {
+    return super.getHeaders() + ",finsCount,gillsCount";
+  }
+
+  @Override
+  public String toCsv() {
+    return super.toCsv() + "," + "Fins: " + finsCount + "," + "Gills: " + gillsCount;
+  }
 
   public AbstractFish(double aquariumVolumeInLitres, int lifespanInYears, Diet diet, double creatureLengthInSantimeters,
       String kindScientificName, int finCount, int gillsCount) {
     super(aquariumVolumeInLitres, lifespanInYears, diet, creatureLengthInSantimeters, kindScientificName);
-    this.finCount = finCount;
-    this.gillsCount = gillsCount;
-  }
+    this.finsCount = finCount;
 
   public int getFinCount() {
-    return finCount;
+    return finsCount;
   }
 
   public void setFinCount(int finCount) {
-    this.finCount = finCount;
+    this.finsCount = finCount;
   }
 
   public int getGillsCount() {
