@@ -48,6 +48,32 @@ public abstract class AbstractSwimmingCreature {
     this.kindScientificName = kindScientificName;
   }
 
+  public AbstractSwimmingCreature(double aquariumVolumeInLitres, int lifespanInYears, Diet diet,
+      double creatureLengthInSantimeters, String kindScientificName) {
+    super();
+    this.aquariumVolumeInLitres = aquariumVolumeInLitres;
+    this.lifespanInYears = lifespanInYears;
+    this.diet = diet;
+    this.creatureLengthInSantimeters = creatureLengthInSantimeters;
+    this.kindScientificName = kindScientificName;
+  }
+
+  public double getCreatureLengthInSantimeters() {
+    return creatureLengthInSantimeters;
+  }
+
+  public void setCreatureLengthInSantimeters(double creatureLengthInSantimeters) {
+    this.creatureLengthInSantimeters = creatureLengthInSantimeters;
+  }
+
+  public String getKindScientificName() {
+    return kindScientificName;
+  }
+
+  public void setKindScientificName(String kindScientificName) {
+    this.kindScientificName = kindScientificName;
+  }
+
   public int getLifespan() {
     return lifespanInYears;
   }

@@ -4,6 +4,7 @@ public class Piranha extends AbstractFish {
 
   private double scaleLengthInMillimeters;
 
+
   @Override
   public String getHeaders() {
     // TODO Auto-generated method stub

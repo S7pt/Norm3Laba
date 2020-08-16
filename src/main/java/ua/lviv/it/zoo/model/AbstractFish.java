@@ -20,8 +20,6 @@ public abstract class AbstractFish extends AbstractSwimmingCreature {
       String kindScientificName, int finCount, int gillsCount) {
     super(aquariumVolumeInLitres, lifespanInYears, diet, creatureLengthInSantimeters, kindScientificName);
     this.finsCount = finCount;
-    this.gillsCount = gillsCount;
-  }
 
   public int getFinCount() {
     return finsCount;
